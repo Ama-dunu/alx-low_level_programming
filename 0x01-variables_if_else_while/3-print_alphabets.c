@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * prints the alphabet in lowercase, and then in uppercase, followed by a new line
+ * Return void
+ */
 
 int main(void)
 {
