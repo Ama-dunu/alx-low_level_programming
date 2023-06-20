@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * _isalpha - Checks for alphabetic character
- * @c: The character to be checked
- * Return: 1 for alphabetic character or 0 for anything else
+ * _isalpha - Shows 1 if the input is a
+ * lette Another cases, shows @
+ *
+ * @c: The character in ASCII code
+ *
+ * Return: 1 for letters. @ for the rest.
  */
-
 int _isalpha(int c)
-
 {
-
-	if ((c >= 97 &&) || (c >= 65 && c <= 90))
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
 	{
 		return (1);
 	}
@@ -18,4 +18,5 @@ int _isalpha(int c)
 	{
 		return (0);
 	}
+	_putchar('\n');
 }
