@@ -4,7 +4,7 @@
  * positive_or_negative - Determines if a number is positive or negative
  * @i: The number to be checked
  * 0 : is the number to be checked
- * Return: void
+ * Return: 0
  */
 
 void positive_or_negative(int i)
