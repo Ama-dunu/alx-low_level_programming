@@ -1,24 +1,11 @@
-#include "main.h"
-
-/**
- * infinite_add - n1 and n2 are the two numbers
- * r is the buffer that the function will use to store the result
- * size_r is the buffer size
- * The function returns a pointer to the result
- * only digits in the strings n1 and n2
- * n1 and n2 will never be empty
- * @n: input value
- * Return: 0
- */
-
-char *infinite_add(char *n1, char *n2, char *r, int size_r)
-
-{
 	int val1 = 0, val2 = 0, temp_tot = 0;
+
+	int i;
+	int j;
 
 	while (*(n1 + i) != '\0')
 		i++;
-	while ((n2 + j) != '\0')
+	while (*(n2 + j) != '\0')
 		j++;
 	i--;
 	j--;
@@ -51,4 +38,4 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	*(r + digits = '\0');
 	rev_string(r);
 	return (r);
-}
+
