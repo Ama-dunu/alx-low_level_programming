@@ -28,13 +28,13 @@ void print_all(const char * const format, ...)
 					printf("%s%d", sep, va_arg(list, int));
 					break;
 				case 'f':
-					printf("%s%f", sep, va_arg(list, int));
+					printf("%s%d", sep, va_arg(list, int));
 					break;
 				case 's':
 					str = va_arg(list, char *);
 					if (!str)
-						str = "(null)";
-					printf("%s%s", sep, va_arg(list, int));
+						str = "(nil)";
+					printf("%s%d", sep, va_arg(list, int));
 					break;
 				default:
 					i++;
